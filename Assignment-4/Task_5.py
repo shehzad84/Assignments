@@ -1,5 +1,4 @@
 #1.	Write a program in Python to allow the error of syntax to go in exception. HINT: use SyntaxError
-##Answer:
 try:
     eval("4<!=6")
 except SyntaxError:
@@ -7,10 +6,9 @@ except SyntaxError:
     
 ############################################################################################
 
-##2.Write a program in Python to allow the user to open a file by using the argv module.
-##If the entered name is incorrect throw an exception and ask them to enter the name again.
-##Make sure to use read only mode.
-##Answer:
+# 2.Write a program in Python to allow the user to open a file by using the argv module.
+# If the entered name is incorrect throw an exception and ask them to enter the name again.
+# Make sure to use read only mode.
 from sys import argv
 Nameofprogram,filename=argv
 print("Name of program ",Nameofprogram)
@@ -31,9 +29,8 @@ while True:
 
 ############################################################################################
 
-##3.Write a program to handle an error if the user entered the number more than four digits
-## it should return “Please length is too short/long !!! Please provide only four digits”
-##Answer:
+# 3.Write a program to handle an error if the user entered the number more than four digits
+# it should return “Please length is too short/long !!! Please provide only four digits”
 def NUMcheck(num):
     try:
         if len(str(num))>4:
@@ -50,10 +47,9 @@ NUMcheck(eval(input('Enter a Number: ')))
 
 ############################################################################################
 
-##4.Create a login page backend to ask users to enter the username and password.
-##Make sure to ask for a Re-Type Password and if the password is incorrect give chance to 
-##enter it again but it should not be more than 3 times.
-##Answer:
+# 4.Create a login page backend to ask users to enter the username and password.
+# Make sure to ask for a Re-Type Password and if the password is incorrect give chance to 
+# enter it again but it should not be more than 3 times.
 tries = 0
 while tries<3:
     UserName = (input("enter a username: "))
@@ -71,8 +67,8 @@ while tries<3:
 
 ############################################################################################
 
-##6.Read any file using Python File handling concept and return only the even length 
-##string from the doc.txt file.
+# 6.Read any file using Python File handling concept and return only the even length 
+# string from the doc.txt file.
 with open('doc.txt', 'w') as text:
     text.write("Hello I am a file\nWhere you need to return the data string\nwhich is of even length")
     text.write('\nMake sure you return the content in\nThe same link as it is present')
