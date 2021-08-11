@@ -1,0 +1,90 @@
+##Assignment1 Ex.7
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)     
+$ git init "Exercise-7"
+Initialized empty Git repository in C:/Users/aviat/Desktop/cadd/test/Exercise-7/.git/
+                                                             dd/test/Exercise-7/.git/
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)     
+$ cd "Exercise-7"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)                                                     (master)
+$ touch index7.html about7.html exercise7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git add index7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git commit -m "committed index7.html"
+[master (root-commit) a8eabec] committed index7.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git add about7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git commit -m "committed about7.html"
+[master 0dc6715] committed about7.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git add exercise7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git commit -m "committed exercise7.html"
+[master 605280f] committed exercise7.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 exercise7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git log
+commit 605280f3ef51633e4529419f5ba9dbccd46be3a9 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:49:47 2021 -0700
+
+    committed exercise7.html
+
+commit 0dc67152d28371b7029e4d87441cd133981afd28
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:49:28 2021 -0700
+
+    committed about7.html
+
+commit a8eabec61a4c75e3d46e4ab586abb19e912284f6
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:49:09 2021 -0700
+
+    committed index7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git reset --hard 0dc67152d28371b7029e4d87441cd133981afd28
+HEAD is now at 0dc6715 committed about7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git log
+commit 0dc67152d28371b7029e4d87441cd133981afd28 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:49:28 2021 -0700
+
+    committed about7.html
+
+commit a8eabec61a4c75e3d46e4ab586abb19e912284f6
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:49:09 2021 -0700
+
+    committed index7.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$

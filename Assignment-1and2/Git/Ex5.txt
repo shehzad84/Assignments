@@ -1,0 +1,40 @@
+##Assignment1 EX.5
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ git init "Exercise-5"
+Initialized empty Git repository in C:/Users/aviat/Desktop/cadd/test/Exercise-4/Exercise-5/.git/
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ cd "Exercise-5"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4/Exercise-5 (master)
+$ touch index.html about.html exercise5.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4/Exercise-5 (master)
+$ git stash
+You do not have the initial commit yet
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4/Exercise-5 (master)
+$ git add exercise5.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4/Exercise-5 (master)
+$ git add index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4/Exercise-5 (master)
+$ git commit -m "added index and exercise5 file for commit"
+[master (root-commit) c2dc80b] added index and exercise5 file for commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 exercise5.html
+ create mode 100644 index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4/Exercise-5 (master)
+$ git stash
+No local changes to save
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4/Exercise-5 (master)
+$ git add about.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4/Exercise-5 (master)
+$ git stash
+Saved working directory and index state WIP on master: c2dc80b added index and exercise5 file for commit

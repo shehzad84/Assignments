@@ -1,0 +1,6 @@
+8. If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’
+again. Will it change the value? If Yes then Why?
+
+Answer:
+
+Yes, it will change and 'a' will keep the final value in its memory location. 'a' variable ia a memory location which can change its vale according to the code.

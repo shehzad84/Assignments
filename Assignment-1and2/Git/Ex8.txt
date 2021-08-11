@@ -1,0 +1,135 @@
+
+
+##Assignment1 Ex8
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-7 
+(master)
+$ cd ..
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)     
+$ git init "Exercise-8"
+Initialized empty Git repository in C:/Users/aviat/Desktop/cadd/test/Exercise-8/.git/
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)     
+$ cd "Exercise-8"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ touch index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git add index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git commit -m "committed index.html file for exercise 8"
+[master (root-commit) 604759b] committed index.html file for 
+exercise 8
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git branch "my-feature"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git checkout my-feature
+Switched to branch 'my-feature'
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(my-feature)
+$ touch about-us.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(my-feature)
+$ git add about-us.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(my-feature)
+$ git commit -m "comitted about-us.html and made changes to index.html"
+[my-feature 8d62955] comitted about-us.html and made changes 
+to index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about-us.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(my-feature)
+$ git log
+commit 8d629553ba9303c5196b5808c2956ac9d5e6ee86 (HEAD -> my-feature)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:54:00 2021 -0700
+
+    comitted about-us.html and made changes to index.html    
+
+commit 604759b12ebb1bf42f3e2b053de42291be06df66 (master)     
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:53:01 2021 -0700
+
+    committed index.html file for exercise 8
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(my-feature)
+$ checkout master
+bash: checkout: command not found
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(my-feature)
+$ git checkout master
+Switched to branch 'master'
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git log
+commit 604759b12ebb1bf42f3e2b053de42291be06df66 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:53:01 2021 -0700
+
+    committed index.html file for exercise 8
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git add index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git commit -m "committed changes made to index.html"
+On branch master
+nothing to commit, working tree clean
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git log
+commit 604759b12ebb1bf42f3e2b053de42291be06df66 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:53:01 2021 -0700
+
+    committed index.html file for exercise 8
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git merge my-feature
+Updating 604759b..8d62955
+Fast-forward
+ about-us.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about-us.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ git log
+commit 8d629553ba9303c5196b5808c2956ac9d5e6ee86 (HEAD -> master, my-feature)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:54:00 2021 -0700
+
+    comitted about-us.html and made changes to index.html    
+
+commit 604759b12ebb1bf42f3e2b053de42291be06df66
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:53:01 2021 -0700
+
+    committed index.html file for exercise 8
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$

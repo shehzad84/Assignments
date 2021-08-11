@@ -1,0 +1,108 @@
+##EXERCISE 9 : MERGE CONFLICTS
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-8 
+(master)
+$ cd ..
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)     
+$ git init "Exercise-9"
+Initialized empty Git repository in C:/Users/aviat/Desktop/cadd/test/Exercise-9/.git/
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)     
+$ cd "Exercise-9"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ touch index9.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git add index9.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git commit -m "committed index9.html from master"
+[master (root-commit) a3f1217] committed index9.html from master
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index9.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git log
+commit a3f12172b0b3941380973749acca45c886218e01 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 17:01:17 2021 -0700
+
+    committed index9.html from master
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git branch "my-feature"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git checkout my-feature
+Switched to branch 'my-feature'
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(my-feature)
+$ touch about.html index9.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(my-feature)
+$ git add about.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(my-feature)
+$ git add index9.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(my-feature)
+$ git commit -m "comitted about.html and index9.html changes 
+to my-feature branch"
+[my-feature 6766007] comitted about.html and index9.html changes to my-feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(my-feature)
+$ git log
+commit 6766007c1f031122561d569fc32b45563ebb5735 (HEAD -> my-feature)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 17:02:27 2021 -0700
+
+    comitted about.html and index9.html changes to my-feature branch
+
+commit a3f12172b0b3941380973749acca45c886218e01 (master)     
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 17:01:17 2021 -0700
+
+    committed index9.html from master
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(my-feature)
+$ git checkout master
+Switched to branch 'master'
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git add index9.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git commit -m " committed changes to index9.html from master for exercise-9"
+On branch master
+nothing to commit, working tree clean
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git log
+commit a3f12172b0b3941380973749acca45c886218e01 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 17:01:17 2021 -0700
+
+    committed index9.html from master
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-9 
+(master)
+$ git merge my-feature
+Updating a3f1217..6766007
+Fast-forward
+ about.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about.html

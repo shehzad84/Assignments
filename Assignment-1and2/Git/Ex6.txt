@@ -1,0 +1,90 @@
+##Assignment1 Ex6
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)     
+$ git init "Exercise-6"
+Initialized empty Git repository in C:/Users/aviat/Desktop/cadd/test/Exercise-6/.git/
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)     
+$ cd "Exercise-6"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ touch index6.html about6.html exercise6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git add index6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git commit -m "added index6.html"
+[master (root-commit) 1cbfe80] added index6.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git add about6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git commit -m "added about6.html"git commit -m "added about6.html"
+error: pathspec 'commit' did not match any file(s) known to git
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git commit -m "added about6.html"
+[master d042e2a] added about6.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git add exercise6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git commit -m "added exercise6.html"
+[master 4db2dcd] added exercise6.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 exercise6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git log
+commit 4db2dcde03718dc74b41ce7ba0df1271c763a6f1 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:45:06 2021 -0700
+
+    added exercise6.html
+
+commit d042e2a5211e3d402150c77f9f7d4dbf682c94c1
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:44:45 2021 -0700
+
+    added about6.html
+
+commit 1cbfe8084f1c81c2b44062d8932714b99dbef98c
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:42:43 2021 -0700
+
+    added index6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 
+(master)
+$ git reset --soft d042e2a5211e3d402150c77f9f7d4dbf682c94c1
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 (master)
+$ git log
+commit d042e2a5211e3d402150c77f9f7d4dbf682c94c1 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:44:45 2021 -0700
+
+    added about6.html
+
+commit 1cbfe8084f1c81c2b44062d8932714b99dbef98c
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>Date:   Sun Jul 25 16:42:43 2021 -0700
+
+    added index6.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-6 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   exercise6.html

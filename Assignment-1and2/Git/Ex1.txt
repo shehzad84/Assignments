@@ -1,0 +1,38 @@
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)
+$ $ git init "Exercise-1"
+bash: $: command not found
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)
+$ git init "Exercise-1"
+Initialized empty Git repository in C:/Users/aviat/Desktop/cadd/test/Exercise-1/.git/
+
+##Assignment1 Ex.1
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)
+$ touch index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)
+$ cd "Exercise-1"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-1 (master)
+$ touch index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-1 (master)
+$ git add index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-1 (master)
+$ git commit -m "committed index.html for exercise 1"
+[master (root-commit) 78a838a] committed index.html for exercise 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-1 (master)
+$ git log
+commit 78a838afcd3f475b782261c3229b34a44e06ebb7 (HEAD -> master)
+Author: shehzad4 <68248511+shehzad4@users.noreply.github.com>
+Date:   Sun Jul 25 16:16:56 2021 -0700
+
+    committed index.html for exercise 1
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-1 (master)
+$

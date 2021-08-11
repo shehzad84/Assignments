@@ -1,0 +1,64 @@
+##Assignment1 Ex.4
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)
+$ git init "Exercise-4"
+Initialized empty Git repository in C:/Users/aviat/Desktop/cadd/test/Exercise-4/.git/
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test (main)
+$ cd "Exercise-4"
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ touch .gitignore
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ echo '*.exe'> .gitignore
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ echo '*.o'> .gitignore
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ echo '*.jar'> .gitignore
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ echo '*libraries.org'> .gitignore
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ git add .gitignore
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working 
+directory
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ git commit -m "added .gitignore file for exercise-4"
+[master (root-commit) fc6d2de] added .gitignore file for exercise-4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+aviat@LAPTOP-740I0GHS MINGW64 ~/Desktop/cadd/test/Exercise-4 
+(master)
+$
